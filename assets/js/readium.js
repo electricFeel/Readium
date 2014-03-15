@@ -5,14 +5,14 @@ require.config({
     baseUrl: '/assets',
     dir: '../../../RediumCustom',
     paths: {
-        jquery: '/vendor/jquery/jquery',
-        hljs: '/vendor/highlightjs/highlight.pack',
-        fluidbox: '/vendor/fluidbox/jquery.fluidbox',
-        imagesloaded: '/vendor/imagesloaded/imagesloaded',
-        'eventEmitter/EventEmitter': '/vendor/eventEmitter/EventEmitter',
-        'eventie/eventie': '/vendor/eventie/eventie',
-        headroomBase: '/vendor/headroom.js/dist/headroom',
-        headroom: '/vendor/headroom.js/dist/jQuery.headroom'
+        jquery: 'assets/vendor/jquery/jquery',
+        hljs: 'assets/vendor/highlightjs/highlight.pack',
+        fluidbox: 'assets/vendor/fluidbox/jquery.fluidbox',
+        imagesloaded: 'assets/vendor/imagesloaded/imagesloaded',
+        'eventEmitter/EventEmitter': 'assets/vendor/eventEmitter/EventEmitter',
+        'eventie/eventie': 'assets/vendor/eventie/eventie',
+        headroomBase: 'assets/vendor/headroom.js/dist/headroom',
+        headroom: 'assets/vendor/headroom.js/dist/jQuery.headroom'
     },
     shim: {
         fluidbox: {
