@@ -12,7 +12,8 @@ require.config({
         'eventEmitter/EventEmitter': 'assets/vendor/eventEmitter/EventEmitter',
         'eventie/eventie': 'assets/vendor/eventie/eventie',
         headroomBase: 'assets/vendor/headroom.js/dist/headroom',
-        headroom: 'assets/vendor/headroom.js/dist/jQuery.headroom'
+        headroom: 'assets/vendor/headroom.js/dist/jQuery.headroom',
+        'ttr': 'assets/js/ttr.js'
     },
     shim: {
         fluidbox: {
