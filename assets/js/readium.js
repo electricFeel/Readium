@@ -3,7 +3,7 @@
 require.config({
     name: 'readium',
     baseUrl: '/assets/js',
-    dir: '../../../readium',
+    dir: '../../../RediumCustom',
     paths: {
         jquery: '/vendor/jquery/jquery',
         hljs: '/vendor/highlightjs/highlight.pack',
@@ -34,16 +34,16 @@ require.config({
 });
 
 require(['jquery', 'hljs', 'ttr', 'fluidbox', 'headroom'], function($, hljs, ttr) {
-    var cover       = $('img[alt="img-post-cover"]'),
-        container   = $('#img-post-cover'),
-        imageList   = $('img'),
+    var cover = $('img[alt="img-post-cover"]'),
+        container = $('#img-post-cover'),
+        imageList = $('img'),
         articleList = $('.contentlist__article');
 
     $('#headroom').headroom({
         classes: {
-            initial : 'animated',
-            pinned : 'slideDown',
-            unpinned : 'slideUp'
+            initial: 'animated',
+            pinned: 'slideDown',
+            unpinned: 'slideUp'
         }
     });
 
@@ -56,7 +56,7 @@ require(['jquery', 'hljs', 'ttr', 'fluidbox', 'headroom'], function($, hljs, ttr
     if (cover.length > 0) {
         container = $('#img-post-cover');
         container.css('background-image', 'url(' + cover.attr('src') + ')')
-                 .show();
+            .show();
 
         cover.remove();
     } else {
@@ -65,7 +65,7 @@ require(['jquery', 'hljs', 'ttr', 'fluidbox', 'headroom'], function($, hljs, ttr
 
     if (articleList.length > 0) {
         articleList.each(function() {
-            var article              = $(this),
+            var article = $(this),
                 estimatedReadingTime = ttr(article.find('.contentlist__full').text());
 
             article.find('.ttr').html(estimatedReadingTime + ' min to read');
