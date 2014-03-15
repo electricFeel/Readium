@@ -13,7 +13,7 @@ require.config({
         'eventie/eventie': 'assets/vendor/eventie/eventie',
         headroomBase: 'assets/vendor/headroom.js/dist/headroom',
         headroom: 'assets/vendor/headroom.js/dist/jQuery.headroom',
-        'ttr': 'assets/js/ttr.js'
+        'ttr': 'assets/js/ttr'
     },
     shim: {
         fluidbox: {
