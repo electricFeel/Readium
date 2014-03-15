@@ -2,7 +2,7 @@
 
 require.config({
     name: 'readium',
-    baseUrl: '/assets/js',
+    baseUrl: '/assets',
     dir: '../../../RediumCustom',
     paths: {
         jquery: '/vendor/jquery/jquery',
